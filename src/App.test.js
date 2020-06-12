@@ -10,9 +10,9 @@ test('renders app title', () => {
 
 test('renders a card', () => {
   const { getByText } = render(<App />);
-  const nameElement = getByText(/Name/i);
+  const nameElement = getByText(/Raghav Virmani/i);
   expect(nameElement).toBeInTheDocument();
-  const companyElement = getByText(/Company/i);
+  const companyElement = getByText(/Thapar University 22/i);
   expect(companyElement).toBeInTheDocument();
   const reposElement = getByText(/Public Repos/i);
   expect(reposElement).toBeInTheDocument();
