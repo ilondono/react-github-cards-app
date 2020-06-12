@@ -9,9 +9,7 @@ class CardsList extends Component {
 
         return(
             <div>
-                <Card {...profiles[0]}/>
-                <Card {...profiles[1]}/>
-                <Card {...profiles[2]}/>
+                {profiles.map(profile => <Card {...profile}/>)}
             </div>
         );
     }
