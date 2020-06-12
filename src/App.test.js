@@ -14,6 +14,6 @@ test('renders a card', () => {
   expect(nameElement).toBeInTheDocument();
   const companyElement = getByText(/Thapar University 22/i);
   expect(companyElement).toBeInTheDocument();
-  const reposElement = getByText(/Public Repos/i);
+  const reposElement = getByText(/50 Public Repos/i);
   expect(reposElement).toBeInTheDocument();
 });
