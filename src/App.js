@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Card from './components/Card.js';
+import CardsList from './components/CardsList.js';
 
 const testData = require('./data/test-data.json');
 
@@ -11,9 +11,7 @@ class App extends Component {
         <div className="App">
           {this.props.title}
         </div>
-        <Card {...testData[0]}/>
-        <Card {...testData[1]}/>
-        <Card {...testData[2]}/>
+        <CardsList profiles={testData} />
       </div>
     );
   }
