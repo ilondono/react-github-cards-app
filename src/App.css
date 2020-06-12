@@ -11,18 +11,15 @@
 }
 
 .Card {
-	margin: 2rem;
-  img {
-    width: 75px;
-  }
+  margin: 2rem;
+}
 
-  .info {
-    display: inline-block;
-    margin-left: 12px;
+.info {
+  display: inline-block;
+  margin-left: 12px;
+}
 
-		.name {
-    	font-size: 1.25rem;
-      font-weight: bold;
-    }
-  }
+.name {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
