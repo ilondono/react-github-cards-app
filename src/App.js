@@ -15,6 +15,12 @@ const testData = [
     company: 'Børn i byen',
     public_repos: '7',
   },
+  {
+    avatar_url: 'https://avatars0.githubusercontent.com/u/810438?v=4',
+    name: 'Dan Abramov',
+    company: '@facebook',
+    public_repos: '100',
+  },
 ];
 
 class App extends Component {
@@ -25,6 +31,8 @@ class App extends Component {
           {this.props.title}
         </div>
         <Card {...testData[0]}/>
+        <Card {...testData[1]}/>
+        <Card {...testData[2]}/>
       </div>
     );
   }
