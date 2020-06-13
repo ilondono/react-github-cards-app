@@ -9,7 +9,7 @@ class CardsList extends Component {
 
         return(
             <div>
-                {profiles.map(profile => <Card {...profile}/>)}
+                {profiles.map(profile => <Card key={profile.name} {...profile}/>)}
             </div>
         );
     }
