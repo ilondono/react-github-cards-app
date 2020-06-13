@@ -11,15 +11,59 @@
 }
 
 .Card {
-  margin: 2rem;
+  margin-top: 2rem;
 }
 
 .info {
   display: inline-block;
   margin-left: 12px;
+  width: 350px;
+  padding-left: 10px;
+  z-index: 100;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.14),
+              0 3px 8px 0 rgba(0, 0, 0, 0.11);
 }
 
 .name {
   font-size: 1.25rem;
   font-weight: bold;
+}
+
+.removeProfile {
+  color: #ac5504;
+  font-size: 0.75rem;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #f7f7f7;
+  border: none;
+  height: 15px;  
+  padding-left: 300px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  vertical-align: middle;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  position: relative;
+  line-height: 32px;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  z-index: 100;
+  background-color: #f7f7f7;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.14),
+              0 3px 8px 0 rgba(0, 0, 0, 0.11);
 }
