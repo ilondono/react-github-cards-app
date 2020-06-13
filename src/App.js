@@ -7,8 +7,15 @@ const testData = require('./data/test-data.json');
 
 class App extends Component {
 
-  addProfile(data) {
-    console.log(data);    
+  state = {
+    profiles: testData
+  }
+
+  addProfile = (profileData) => {
+    console.log(profileData);  
+    this.setState(previousState => ({
+      profiles: [...previousState.profiles, profileData]
+    }));
   }
 
   render() {
@@ -18,7 +25,7 @@ class App extends Component {
           {this.props.title}
         </div>
         <Form addResult={this.addProfile} />
-        <CardsList profiles={testData} />
+        <CardsList profiles={this.state.profiles} />
       </div>
     );
   }
