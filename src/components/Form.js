@@ -10,7 +10,6 @@ class Form extends Component {
     handleSubmit = async (event) => {
         event.preventDefault();
         const response = await axios.get(`https://api.github.com/users/${this.state.username}`);
-        console.log(response.data.name);
         this.props.addResult(response.data);
         this.setState({username:''});
     }

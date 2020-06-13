@@ -3,16 +3,13 @@ import './App.css';
 import CardsList from './components/CardsList.js';
 import Form from './components/Form.js';
 
-const testData = require('./data/test-data.json');
-
 class App extends Component {
 
   state = {
-    profiles: testData
+    profiles: []
   }
 
   addProfile = (profileData) => {
-    console.log(profileData);  
     this.setState(previousState => ({
       profiles: [...previousState.profiles, profileData]
     }));
