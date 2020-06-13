@@ -6,13 +6,18 @@ import Form from './components/Form.js';
 const testData = require('./data/test-data.json');
 
 class App extends Component {
+
+  addProfile(data) {
+    console.log(data);    
+  }
+
   render() {
     return (
       <div style={{marginLeft:'10%', width:'80%'}}>
         <div className="App">
           {this.props.title}
         </div>
-        <Form />
+        <Form addResult={this.addProfile} />
         <CardsList profiles={testData} />
       </div>
     );
