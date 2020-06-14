@@ -15,6 +15,12 @@ class App extends Component {
     }));
   }
 
+  removeProfile = (profileData) => {
+    this.setState((previousState) => ({
+      profiles: previousState.profiles.filter((profile) => profile.id !== profileData)
+    }));
+  };
+
   render() {
     return (
       <div style={{marginLeft:'10%', width:'80%'}}>
@@ -22,7 +28,7 @@ class App extends Component {
           {this.props.title}
         </div>
         <Form addResult={this.addProfile} />
-        <CardsList profiles={this.state.profiles} />
+        <CardsList profiles={this.state.profiles} removeProfileFunction={this.removeProfile} />
       </div>
     );
   }

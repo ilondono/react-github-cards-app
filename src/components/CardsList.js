@@ -4,12 +4,13 @@ import Card from './Card.js';
 class CardsList extends Component {
     
     render() {
-
-        const profiles = this.props.profiles;
-
         return(
             <div>
-                {profiles.map(profile => <Card key={profile.id} {...profile}/>)}
+                {this.props.profiles.map(profile => 
+                    <Card key={profile.id} 
+                          removeProfile={this.props.removeProfileFunction} 
+                          {...profile}
+                    />)}
             </div>
         );
     }

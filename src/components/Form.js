@@ -16,7 +16,7 @@ class Form extends Component {
 
     render() {
         return(
-            <div style={{textAlign:'center'}}>
+            <div className='form' style={{textAlign:'center'}}>
                 <form onSubmit={this.handleSubmit}>
                     <input type="text" 
                            value={this.state.username}
@@ -24,7 +24,7 @@ class Form extends Component {
                            onChange={(event) => this.setState({username: event.target.value})}
                            required
                     />
-                    <button>Add</button>
+                    <button style={{width:'80px'}} >Add Card</button>
                 </form>
             </div>
         );
